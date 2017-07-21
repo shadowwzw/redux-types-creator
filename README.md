@@ -1,7 +1,23 @@
 # redux-types-creator
 types generator for redux
 
-## **Usage (default port: 3000)**
+[![Latest Stable Version](https://img.shields.io/npm/v/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)
+[![License](https://img.shields.io/npm/l/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)
+
+----------
+
+## **Installation**
+
+```bash
+$ npm install redux-types-creator --save
+```
+or
+```bash
+$ yarn add redux-types-creator
+```
+----------
+
+## **Usage**
 
 ```js
 import Rtc from "redux-types-creator";

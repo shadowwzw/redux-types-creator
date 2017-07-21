@@ -1,0 +1,22 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "prefer-const": 2,
+    "no-console": 0,
+    "strict": [2, "never"]
+  },
+  "parser": "babel-eslint",
+}

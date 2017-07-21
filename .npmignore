@@ -1,0 +1,10 @@
+.git
+.idea
+npm-debug.log
+node_modules
+.DS_Store
+.eslintrc.json
+yarn.lock
+src
+gulpfile.js
+tests

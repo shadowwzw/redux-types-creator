@@ -1,0 +1,49 @@
+{
+  "name": "redux-types-creator",
+  "version": "0.0.1",
+  "description": "types generator for redux",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "ava tests",
+    "all": "npm run build && npm test",
+    "prepublish": "npm run all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowwzw/redux-types-creator.git"
+  },
+  "author": "Gavrilov Ruslan shadowwzw <miditab@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowwzw/redux-types-creator/issues"
+  },
+  "homepage": "https://github.com/shadowwzw/redux-types-creator",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2017": "^6.22.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-uglify": "^2.1.2",
+    "pump": "^1.0.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  },
+  "keywords": [
+    "redux",
+    "types",
+    "generator",
+    "creator"
+  ]
+}

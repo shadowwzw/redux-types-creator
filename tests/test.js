@@ -1,17 +1,10 @@
-# redux-types-creator
-types generator for redux
+const ava = require('ava');
+const Rtc = require('../index').default;
 
-## **Usage (default port: 3000)**
+const actionTypes = Rtc(true)('START', 'FINISH', 'ERROR')('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS');
 
-```js
-import Rtc from "redux-types-creator";
-const actionTypes = Rtc(true)
-('START', 'FINISH', 'ERROR')
-('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS');
-
-console.log(actionTypes);
-/*
-{
+ava("result", t => {
+  t.deepEqual(actionTypes, {
       CREATE_ITEMS: {
         START: 'CREATE_ITEMS_START',
         FINISH: 'CREATE_ITEMS_FINISH',
@@ -31,5 +24,11 @@ console.log(actionTypes);
         SELF: 'DELETE_ITEMS'
       }
     }
- */
-```
+  );
+});
+
+ava("frozen", t => {
+  t.throws(() => {
+    actionTypes.prop = true;
+  }, TypeError);
+});

@@ -21,9 +21,9 @@ $ yarn add redux-types-creator
 
 ```js
 import reduxTypesCreator from "redux-types-creator";
-const actionTypes = reduxTypesCreator(true)
-('START', 'FINISH', 'ERROR')
-('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS');
+const actionTypes = reduxTypesCreator(true) // true - object will be frozen.
+('START', 'FINISH', 'ERROR') // postfix
+('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS'); // types
 
 console.log(actionTypes);
 /*
@@ -55,31 +55,9 @@ console.log(actionTypes);
 
 ```js
 const reduxTypesCreator = require("redux-types-creator").default;
-const actionTypes = reduxTypesCreator(true)
-('START', 'FINISH', 'ERROR')
-('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS');
+const actionTypes = reduxTypesCreator(true) // true - object will be frozen.
+('START', 'FINISH', 'ERROR') // postfix
+('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS'); // types
 
 console.log(actionTypes);
-/*
-{
-      CREATE_ITEMS: {
-        START: 'CREATE_ITEMS_START',
-        FINISH: 'CREATE_ITEMS_FINISH',
-        ERROR: 'CREATE_ITEMS_ERROR',
-        SELF: 'CREATE_ITEMS'
-      },
-      GET_ITEMS: {
-        START: 'GET_ITEMS_START',
-        FINISH: 'GET_ITEMS_FINISH',
-        ERROR: 'GET_ITEMS_ERROR',
-        SELF: 'GET_ITEMS'
-      },
-      DELETE_ITEMS: {
-        START: 'DELETE_ITEMS_START',
-        FINISH: 'DELETE_ITEMS_FINISH',
-        ERROR: 'DELETE_ITEMS_ERROR',
-        SELF: 'DELETE_ITEMS'
-      }
-    }
- */
 ```

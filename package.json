@@ -1,6 +1,6 @@
 {
   "name": "redux-types-creator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "types generator for redux",
   "main": "index.js",
   "scripts": {

@@ -20,6 +20,7 @@ $ yarn add redux-types-creator
 ## **Usage (use ES6 Modules)**
 
 ```js
+// const reduxTypesCreator = require("redux-types-creator").default; // use require
 import reduxTypesCreator from "redux-types-creator";
 const actionTypes = reduxTypesCreator(true) // true - object will be frozen.
 ('START', 'FINISH', 'ERROR') // postfix
@@ -48,16 +49,16 @@ console.log(actionTypes);
       }
     }
  */
+
+const { CREATE_ITEMS, GET_ITEMS, DELETE_ITEMS } = actionTypes;
+CREATE_ITEMS.SELF // CREATE_ITEMS
+CREATE_ITEMS.START // CREATE_ITEMS_START
+CREATE_ITEMS.FINISH // CREATE_ITEMS_FINISH
+CREATE_ITEMS.ERROR // CREATE_ITEMS_ERROR
+
+// action creator
+getItems = () => ({
+  type: CREATE_ITEMS.SELF
+})
 ```
 ----------
-
-## **Usage (use require)**
-
-```js
-const reduxTypesCreator = require("redux-types-creator").default;
-const actionTypes = reduxTypesCreator(true) // true - object will be frozen.
-('START', 'FINISH', 'ERROR') // postfix
-('CREATE_ITEMS', 'GET_ITEMS', 'DELETE_ITEMS'); // types
-
-console.log(actionTypes);
-```

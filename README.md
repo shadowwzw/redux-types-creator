@@ -17,6 +17,12 @@ $ yarn add redux-types-creator
 ```
 ----------
 
+examples which uses redux-types-creator
+1) [react-native-redux-saga](https://github.com/shadowwzw/react-native-redux-saga/tree/master/actions)
+2) [react-native-reddit-demo](https://github.com/shadowwzw/react-native-reddit-demo/tree/master/actions)
+
+----------
+
 ## **Usage (use ES6 Modules)**
 
 ```js

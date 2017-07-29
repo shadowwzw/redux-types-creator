@@ -1,5 +1,7 @@
 # redux-types-creator
-types generator for redux
+types generator for redux 😎
+
+![logo](https://raw.githubusercontent.com/shadowwzw/redux-types-creator/master/images/redux-types-creator.png)
 
 [![Latest Stable Version](https://img.shields.io/npm/v/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)
 [![License](https://img.shields.io/npm/l/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)

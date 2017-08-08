@@ -3,8 +3,10 @@ types generator for redux 😎
 
 ![logo](https://raw.githubusercontent.com/shadowwzw/redux-types-creator/master/images/redux-types-creator.gif)
 
+[![build status](https://travis-ci.org/shadowwzw/redux-types-creator.svg?branch=master)](https://travis-ci.org/shadowwzw/redux-types-creator)
 [![Latest Stable Version](https://img.shields.io/npm/v/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)
 [![License](https://img.shields.io/npm/l/redux-types-creator.svg)](https://www.npmjs.com/package/redux-types-creator)
+
 
 ----------
 

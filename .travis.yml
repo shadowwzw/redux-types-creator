@@ -8,5 +8,6 @@ script:
 branches:
   only:
     - master
-ignore:
-  - *.md
+skip_build:
+  - README.MD
+  - LICENSE
